@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pawfect Pet Care – Grooming & Boarding</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="80" tabindex="0">
+
+  <!-- NAVBAR -->
+  <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#top">
+        🐾 Pawfect Pet Care
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div id="navbarContent" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#faqs">FAQs</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO / INTRO -->
+  <header id="top" class="hero-section">
+    <div class="container">
+      <div class="col-md-8 col-lg-6">
+        <p class="hero-badge text-uppercase mb-3">
+          Safe, loving care while you’re away
+        </p>
+        <h1 class="display-4 fw-bold mb-3">
+          Grooming, Daycare & Boarding for Your Pawfect Best Friend
+        </h1>
+        <p class="lead mb-4">
+          At Pawfect Pet Care, we treat every pet like family. From spa-style baths to cozy overnight suites,
+          your dog or cat will enjoy a clean, supervised, and stress-free stay.
+        </p>
+        <a href="#services" class="btn btn-primary btn-lg me-2">
+          View Services
+        </a>
+        <a href="#faqs" class="btn btn-outline-light btn-lg">
+          Plan Your Visit
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- GALLERY / CAROUSEL SECTION -->
+  <section id="gallery" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="fw-bold">Happy Guests Gallery</h2>
+        <p class="text-muted">
+          Take a peek at some of our recent visitors enjoying playtime, snuggles, and spa days.
+        </p>
+      </div>
+
+      <div id="petCarousel" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#petCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#petCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#petCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <!-- Slides -->
+        <div class="carousel-inner rounded shadow">
+          <div class="carousel-item active">
+            <img src="images/carousel-dog-play.jpg" class="d-block w-100"
+              alt="Dogs playing together in our daycare yard">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+              <h5>All-Day Play</h5>
+              <p>Supervised group play in our secure indoor–outdoor daycare yard.</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="images/carousel-dog-groom.jpg" class="d-block w-100" alt="Dog being gently bathed and groomed">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+              <h5>Spa-Style Grooming</h5>
+              <p>Warm baths, blowouts, nail trims, and brush-outs for a fresh, clean pup.</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="images/carousel-cat-boarding.jpg" class="d-block w-100"
+              alt="Cat relaxing in a cozy boarding suite">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+              <h5>Cozy Cat Suites</h5>
+              <p>Quiet, multi-level cat condos with daily enrichment and snuggle time.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#petCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#petCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES / CARDS SECTION -->
+  <section id="services" class="py-5">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="fw-bold">Our Core Services</h2>
+        <p class="text-muted">
+          Whether it’s a quick spa day or a long weekend away, we’ve got your pet covered.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Card 1: Daycare -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm service-card">
+            <img src="images/service-daycare.jpg" class="card-img-top"
+              alt="Dog running happily in our daycare play yard">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Doggy Daycare</h5>
+              <p class="card-text">
+                Full- and half-day play sessions in supervised playgroups matched by size and temperament.
+              </p>
+              <ul class="small mb-3">
+                <li>Indoor & outdoor play spaces</li>
+                <li>Nap breaks on comfy beds</li>
+                <li>Real-time text updates on request</li>
+              </ul>
+              <a href="#faqs" class="btn btn-primary mt-auto">See Daycare Requirements</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Grooming -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm service-card">
+            <img src="images/service-grooming.jpg" class="card-img-top" alt="Small dog on grooming table being brushed">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Grooming & Spa</h5>
+              <p class="card-text">
+                From “just a bath” to full trims, our gentle groomers keep pets clean, soft, and tangle-free.
+              </p>
+              <ul class="small mb-3">
+                <li>Bath, blow-dry, & brush-out</li>
+                <li>Nail trims & ear cleaning</li>
+                <li>Puppy intro packages available</li>
+              </ul>
+              <a href="#faqs" class="btn btn-primary mt-auto">View Grooming Policies</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Boarding -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm service-card">
+            <img src="images/service-boarding.jpg" class="card-img-top"
+              alt="Dog resting in a clean boarding suite with a blanket and toy">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Overnight Boarding</h5>
+              <p class="card-text">
+                Climate-controlled suites, soft bedding, and staff on-site overnight so your pet never feels alone.
+              </p>
+              <ul class="small mb-3">
+                <li>Single & family suites available</li>
+                <li>Medication administration by request</li>
+                <li>Nightly tuck-in and treats</li>
+              </ul>
+              <a href="#faqs" class="btn btn-primary mt-auto">Boarding Checklist</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ / ACCORDION SECTION -->
+  <section id="faqs" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="fw-bold">Frequently Asked Questions</h2>
+        <p class="text-muted">
+          New to Pawfect Pet Care? Start here for the basics on what to bring, how to book, and health requirements.
+        </p>
+      </div>
+
+      <div class="accordion" id="faqAccordion">
+
+        <!-- FAQ 1 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              What should I bring for overnight stays?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              For boarding, please bring your pet’s regular food (pre-portioned if possible), any medications in
+              original containers, and a leash or carrier. You’re welcome to pack a small blanket or favorite toy,
+              but we have plenty of comfy bedding and enrichment items here too.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              What vaccinations are required?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              For dogs, we require proof of Rabies, Distemper/Parvo (DHPP), and Bordetella (kennel cough) within the
+              last 12 months. For cats, we require Rabies and FVRCP. Please email or upload your records before your
+              first visit so we can verify them in advance.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Can I tour the facility before booking?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Absolutely. We offer guided tours most weekdays between 11:00 a.m. and 2:00 p.m. so you can see our play
+              yards, suites, and grooming spa. Just give us a quick call or send a message, and we’ll reserve a tour
+              time for you and your pet.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              How do drop-off and pick-up times work?
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Daycare drop-off runs from 6:30–9:30 a.m., and pick-up is 3:30–7:00 p.m. Boarding check-in is available
+              any time during lobby hours. If you need an early or late pick-up, just let us know—we’ll do our best to
+              accommodate you.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-4 bg-dark text-light">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <p class="mb-2 mb-md-0 small">
+        &copy; <span id="year"></span> Pawfect Pet Care · All rights reserved.
+      </p>
+      <p class="mb-0 small">
+        1234 Wagging Tail Lane · Springfield, MO · (417) 555-0123
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (Bundle includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+
+  <script>
+    // Simple current-year script for the footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>
