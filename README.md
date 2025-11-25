@@ -24,4 +24,4 @@ Live site:
 
 Screenshot of the homepage (index.html in the /pawfect-pet-care/ folder):
 
-![Pawfect Pet Care Homepage](screenshot-home.png)
+![Pawfect Pet Care Homepage](./images/screenshot-home.png)
